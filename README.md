@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution](https://github.com/activus-d/frontend-mentor/tree/master/crowdfunding-product-page-main/crowdfunding-product-page-main)
-- Live Site URL: [live site](https://activus-d.github.io/frontend-mentor/)
+- Solution URL: [solution](https://github.com/activus-d/crowdfunding-product-page-main)
+- Live Site URL: [live site](https://activus-d.github.io/crowdfunding-product-page-main/)
 
 ## My process
 
