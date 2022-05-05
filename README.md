@@ -44,10 +44,10 @@ Users should be able to:
 - Web-first workflow
 
 ### What I learned
-- Learned how to modify the fill color    svg images.
+- Learned how to modify the fill-color of svg images.
 - Learned how to make mobile suitable nav bar.
 - Learned how to make progress bar with CSS and JavaScript.
-- learned how querySelectorAll work.
+- learned how querySelectorAll works.
 
 ### Continued development
 
