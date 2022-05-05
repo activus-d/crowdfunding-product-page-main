@@ -1,0 +1,814 @@
+/******************************************
+GENERAL STYLES
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+p, span, label {
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: hsl(0, 0%, 48%);
+}
+h2 {
+  font-size: 1.6rem;
+}
+h3 {
+  font-size: 2.1rem;
+}
+h4 {
+  font-size: 1.2rem;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  position: relative;
+  margin: 0
+}
+.container {
+  position: relative;
+  min-height: 85rem;
+  width: 100%;
+  margin: auto;
+}
+header {
+  height: 30rem;
+}
+header div {
+  display: flex;
+  justify-content: space-between;
+}
+ul {
+  display: flex;
+  visibility: visible;
+}
+.mastercraftLogo {
+  width: 3rem;
+  position: absolute;
+  top: 20.5rem;
+  left: 48%;
+  z-index: 2;
+}
+main {
+  width: 45%;
+  position: absolute;
+  top: 22rem;
+  left: 27%;
+}
+.projectTopConDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bookmark {
+  display: flex;
+  align-items: center;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+body {
+  background-color: hsl(0, 11%, 93%);
+  font-family: 'Commissioner', sans-serif;
+  width: 100%;
+}
+header {
+  background-image: url("../images/image-hero-desktop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: rgb(255, 255, 255);
+  padding: 2% 10% 0 10%;
+  z-index: -1;
+}
+header .menuIcon {
+  display: none;
+}
+header span {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  padding: 0.5rem;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  font-weight: 700;
+  flex-basis: 50%;
+}
+li {
+  display: inline-block;
+  height: max-content;
+  text-align: right;
+}
+a{
+  color: white;
+  width: 100%;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.5rem 1.3rem;
+  display: inline-block;
+  text-align: center;
+}
+a:hover {
+  background-color:hsl(0, 11%, 93%);
+  color: hsl(176, 72%, 28%);
+}
+main {
+  margin: 0 auto;
+  padding-bottom: 5rem;
+  font-size: 1.3rem;
+  z-index: 1;
+}
+
+.projectTop {
+  margin-bottom: 1rem;
+  background-color: white;
+  padding: 2rem;
+  text-align: justify;
+}
+.projectTop h1, .projectTop p {
+  text-align: center;
+}
+.projectTopConDiv {
+  margin-top: 3rem;
+}
+.projectTopConDiv button {
+  border-radius: 3rem;
+  border: none;
+  height: 4rem;
+  width: 15rem;
+  background: hsl(176, 50%, 47%);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+.projectTopConDiv button:active {
+  cursor: pointer;
+  transform: translateY(0.3rem);
+  background: hsl(176, 72%, 28%);
+  box-shadow: 0.2rem 0.2rem 0.2rem 0.3rem hsl(176, 50%, 47%);
+}
+.bookmark {
+  border-radius: 2rem;
+  background-color: hsl(0, 11%, 93%);
+  width: 10rem;
+  height: auto;
+  padding-right: 1rem;
+}
+.bookmarkIcon{
+  width: 3rem;
+  height: 3rem;
+  /* background-image: url(../images/icon-bookmark.svg); */
+  background-size: cover;
+  margin-right: 0.5rem;
+}
+.icon2{
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid;
+  background-image: url(../images/icon-bookmark-click.svg);
+  background-size: cover;
+  margin-right: 0.5rem;
+}
+.backers {
+  margin-bottom: 1rem;
+  background-color: white;
+  padding: 2rem;
+}
+.backersDivOne {
+  display: flex;
+}
+.backersDivOne .spanBold {
+  font-size: 1.7rem;
+  margin-bottom: 0.3rem;
+}
+.backersDivOne div {
+  display: flex;
+  flex-direction: column;
+  padding-right: 2rem;
+}
+.backersDivTwo {
+  display: flex;
+}
+.backersDivTwo div {
+  height: 1rem;
+  flex-basis: 10%;
+  margin-top: 2rem;
+  background-color: hsl(0, 11%, 93%);
+}
+.backersDivTwo div:first-of-type {
+  border-radius: 1rem 0 0 1rem;
+}
+.backersDivTwo div:last-of-type {
+  border-radius: 0 1rem 1rem 0;
+}
+hr {
+  height: auto;
+  margin: 0 2rem;
+  border: none;
+  border-left: 1px solid hsl(0, 5%, 81%);
+}
+#projectAbout {
+  background-color: white;
+  padding: 2rem;
+}
+.stand {
+  background-color: white;
+  padding: 1rem 2rem;
+
+}
+.standTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.standContainer{
+  padding: 0 2rem;
+  border: 1px solid hsl(0, 0%, 83%);
+  border-radius: 0.5rem;
+}
+.standBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.standBottom span {
+  font-size: 1rem;
+  margin-left: 0.5rem;
+}
+.listLeft {
+  display: flex;
+  align-items: center;
+}
+.colored {
+  color: hsl(176, 50%, 47%);
+}
+.standTop .colored {
+  padding-top: 0.4rem;
+}
+.stand button {
+  background-color: hsl(176, 50%, 47%);
+  height: 3rem;
+  border-radius: 1.5rem;
+  border: none;
+  width: 12rem;
+  color: rgb(255, 255, 255);
+}
+/* .stand button:active {
+  cursor: pointer;
+  transform: translateY(0.3rem);
+  background: hsl(176, 72%, 28%);
+  box-shadow: 0.2rem 0.2rem 0.2rem 0.3rem hsl(176, 50%, 47%);
+} */
+.special {
+  padding-bottom: 2rem;
+}
+.special h2 {
+  color:hsl(0, 0%, 48%)
+}
+.special p, .special span  {
+  color: hsl(0, 0%, 79%);
+}
+.special .colored {
+  color: hsl(176, 26%, 63%)
+}
+.special button {
+  background: hsl(0, 0%, 79%);
+}
+.special button:active {
+  cursor: pointer;
+  transform: translateY(0.3rem);
+  background:hsl(176, 50%, 47%);
+  box-shadow: 0.2rem 0.2rem 0.2rem 0.3rem hsl(176, 50%, 47%);
+}
+
+/******************************************
+STYLES FOR POP-UP ACTIONS
+/*******************************************/
+.bookmarkPopUp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 55%;
+  left: 35%;
+  width: 30%;
+  padding: 2rem;
+  text-align: center;
+  background-color: white;
+  z-index: 3;
+}
+.bookmarkPopUp button {
+  background-color: hsl(176, 50%, 47%);
+  border: none;
+  width: 7rem;
+  height: 3rem;
+  border-radius: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+.overlay {
+  min-height: 150rem;
+  width: 100vw;
+  background-color: black;
+  position: absolute;
+  opacity: 0.8;
+  z-index: 2;
+}
+
+.projectBackPopUp {
+  width: 45%;
+  position: absolute;
+  top: 16%;
+  left: 27%;
+  z-index: 3;
+  background: white;
+}
+.projectBackPopUp button:active {
+  cursor: pointer;
+  transform: translateY(0.3rem);
+  background: hsl(176, 72%, 28%);
+  box-shadow: 0.2rem 0.2rem 0.2rem 0.3rem hsl(176, 50%, 47%);
+}
+.close {
+padding-left: 98%;
+}
+.projectPopHeader {
+  padding: 2rem 2rem 0 2rem;
+}
+.standPopUp {
+  min-height: 9rem;
+  border: 1px solid hsl(0, 0%, 83%);
+  margin: 2rem;
+}
+.standPopUp h4 {
+  cursor: pointer;
+}
+h4:active {
+  color:hsl(176, 72%, 28%)
+}
+h4:hover{
+  color:hsl(176, 72%, 28%)
+}
+
+.standTop {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 1rem 2rem
+}
+.standPopHeading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.standPopTop {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 1rem;
+}
+.standPopHeading div {
+  display: flex;
+}
+.standPopHeading .colored {
+  margin-top: 1.59rem;
+  margin-left: 1rem;
+  padding: 0;
+}
+.specialPop .colored {
+  color:hsl(176, 26%, 63%)
+}
+.specialPop h4 {
+  color:hsl(0, 0%, 48%)
+}
+.specialPop h4:hover {
+  color:hsl(176, 26%, 63%);
+}
+.specialPop h4:active {
+  color:hsl(176, 50%, 47%)
+}
+.specialPop p {
+  color: hsl(0, 0%, 79%)
+}
+.specialPop .spanBold {
+  color: hsl(0, 0%, 48%)
+}
+.specialPop .colored {
+  color:hsl(176, 26%, 63%)
+}
+.spanBold {
+  font-weight: 700;
+  color: black;
+  padding-right: 0.5rem;
+}
+.select {
+  height: 100%;
+  height: 2rem;
+  flex-basis: 10%;
+  margin-top: 1.33rem;
+  padding-top: 0.4rem;;
+}
+.list {
+  height: 1.5rem;
+  width: 1.5rem;
+  border: 1px solid;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.listMid1, .listMid2, .listMid3, .listMid4 {
+  height: 0.75rem;
+  width: 0.75rem;
+  border-radius: 50%;
+  background:hsl(176, 50%, 47%);
+}
+form {
+  height: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid hsl(0, 0%, 83%);
+  padding: 1rem 2rem;
+}
+form div {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 80%;
+}
+input {
+  /* flex-basis: 20%; */
+  min-width: 3rem;
+  height: 3.7rem;
+  border-radius: 2rem;
+  padding: 0 1rem;
+  border: 1px solid hsl(0, 0%, 83%);
+}
+.form1 input {
+  width: 15rem;
+}
+.form2 input {
+  width: 15rem;
+}
+.form3 input {
+  width: 15rem;
+}
+.form4 input {
+  width: 15rem;
+}
+.form4 {
+  height: 15rem;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+input:focus {
+  outline-width: 1px;
+  outline-color:hsl(176, 50%, 47%)
+}
+form button {
+  flex-basis: 20%;
+  height: 3.7rem;
+  border-radius: 2rem;
+  margin-left: 2rem;
+  border: none;
+  background: hsl(176, 50%, 47%);
+}
+.standPopBorder {
+  border: 2px solid hsl(176, 50%, 47%);
+}
+
+/**************************************
+STYLES TO HIDE POP-UP NOTIFICATIONS
+**************************************/
+.overlayHide {
+  display: none;
+}
+.bookmarkPopUpHide {
+  display: none;
+}
+.projectBackPopHide {
+  display: none;
+}
+.formHide {
+  display: none;
+}
+.removeMidColor {
+  background: none;
+}
+
+/**************************************
+STYLES FOR SCREEN-SIZE 1200PX
+*************************************/
+@media all and (max-width: 1200px) {
+ .select {
+   margin-right: 1rem;
+ }
+}
+
+/**************************************
+STYLES FOR SCREEN-SIZE 965PX
+*************************************/
+@media all and (max-width: 960px) {
+  .standTop {
+    padding: 1rem 0rem;
+  }
+  .standPopHeading {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .overlayHide {
+    height: 150rem;
+  }
+  form {
+    height: 10rem;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  form div {
+    flex-basis: 50%;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+  label {
+    padding: 0.4rem 0;
+  }
+  input {
+    height: 3rem;
+  }
+  .form1 input {
+    width: 10rem;
+  }
+  .form2 input {
+    width: 10rem;
+  }
+  .form3 input {
+    width: 10rem;
+  }
+  .form4 input {
+    width: 10rem;
+  }
+  .form4 {
+    height: 10rem;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  form button {
+    flex-basis: 50%;
+    width: 20rem;
+    padding: 0.5rem 1;
+    margin: 0 auto;
+  }
+}
+
+/**************************************
+STYLES FOR SCREEN-SIZE 830PX
+*************************************/
+@media all and (max-width: 830px) {
+  .standTop {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .standTop h2, .standTop p {
+    margin-bottom: 0;
+  }
+  .standPopHeading div:not(:last-of-type) {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .standPopHeading .colored, .standPopHeading h4 {
+    margin: 0;
+  }
+  .standPopHeading {
+    line-height: 1.5;
+  }
+  .select {
+    margin-top: 0;
+  }
+  .overlayHide {
+    height: 165rem;
+  }
+}
+
+/**************************************
+STYLES FOR SCREEN-SIZE 760PX
+*************************************/
+@media all and (max-width: 960px) {
+  .standTop h2 {
+    font-size: 1.4rem;
+  }
+  .standTop p {
+    font-size: 1.1rem;
+  }
+  .projectTopConDiv button {
+    width: 12rem;
+  }
+  .bookmarkPopUp {
+    width: 50%;
+  }
+  .overlayHide {
+    height: 165rem;
+  }
+}
+
+/******************************************
+STYLES FOR SCREEN-SIZE 720PX
+/*****************************************/
+@media all and (max-width: 720px) {
+  .bookmark span {
+    display: none;
+  }
+  .bookmark {
+    width: auto;
+    background: white;
+  }
+  .overlayHide {
+    height: 174rem;
+  }
+  ul {
+    padding: 0;
+  }
+}
+
+/******************************************
+STYLES FOR SCREEN-SIZE 670PX
+/*****************************************/
+@media all and (max-width: 670px) {
+  .mastercraftLogo {
+    left: 47%;
+    z-index: 2;
+  }
+  .backersDivOne {
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .backersDivOne div {
+    padding-right: 0;
+    margin-bottom: 1rem;
+    align-items: center;
+  }
+  hr {
+    border-left: none;
+  }
+  .bottomBorder {
+    border-bottom: 1px solid hsl(0, 5%, 81%);
+    width: max-content;
+    padding-bottom: 1rem;
+  }
+  .backersDivTwo div {
+    margin-top: 1rem;
+  }
+  main {
+    width: 55%;
+    left: 19%;
+  }
+  h3 {
+    margin: 0;
+  }
+  .stand button {
+    margin: 1rem 0;
+  }
+  .overlayHide {
+    height: 187rem;
+  }
+  ul {
+    flex-basis: 52%;
+  }
+}
+
+/******************************************
+STYLES FOR SCREEN-SIZE 560PX
+/*****************************************/
+@media all and (max-width: 580px) {
+  .overlayHide {
+    height: 205rem;
+  }
+  .bookmarkPopUp {
+    width: 70%;
+    left: 15%;
+  }
+}
+
+/****************************************************
+STYLES FOR SCREEN-SIZE 580PX / START OF MOBILE STYLES 
+/****************************************************/
+@media all and (max-width: 580px) {
+  header {
+    background-image: url("../images/image-hero-mobile.jpg");
+    padding: 1rem 2rem;
+  }
+  header span {
+    font-size: 2rem;
+  }
+  header .menuIcon {
+    display: block;
+    width: 100%;
+  }
+  ul {
+    visibility: hidden;
+    flex-direction: column;
+    padding: 0;
+    justify-content: space-around;
+    width: 80%;
+    height: 18rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    position: absolute;
+    top: 7%;
+    left: 13%;
+    z-index: 3;
+  }
+  a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 100%;
+    text-align: left;
+    width: 100%;
+  }
+  a:hover {
+    background-color:hsl(176, 50%, 47%);
+    cursor: pointer;
+  }
+  li:hover {
+    color: white;
+    cursor: pointer;
+  }
+ a:not(:last-of-type) {
+  border-bottom: 1px solid hsl(0, 5%, 81%);
+ }
+  li {
+    color: black;
+    text-align: left;
+    height: 100%;
+    width: 100%;
+    padding: 2rem 0;
+  }
+  .iconContainer {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+  }
+  .menuIcon {
+    height: 2rem;
+    width: 2rem;
+  }
+  .mastercraftLogo {
+    left: 45%;
+    z-index: 2;
+  }
+  .overlayHide {
+    height: 205rem;
+  }
+  .projectBackPopUp {
+    width: 85%;
+    left: 8%;
+  }
+  main {
+    width: 80%;
+    left: 8.5%
+  }
+  .standBottom {
+    flex-direction: row;
+  }
+}
+
+/****************************************************
+STYLES FOR SCREEN-SIZE 340PX / START OF MOBILE STYLES 
+/****************************************************/
+@media all and (max-width: 340px) {
+  .standBottom {
+    flex-direction: column;
+  }
+  .stand button {
+    width: 100%
+  }
+  .mastercraftLogo {
+    left: 43.5%;
+  }
+  form button {
+    width: 80%;
+  }
+  .bookmarkPopUp {
+    width: 85%;
+    left: 10%;
+  }
+}
