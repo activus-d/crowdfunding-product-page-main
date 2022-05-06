@@ -30,7 +30,7 @@ projectBack.addEventListener('click', showprojectPop)
 function showprojectPop() {
     overlayHide.style.display = "block"
     projectBackPopUp.style.display = "block"
-}
+ }
 
 /*CLOSE POP-UP NOTIFICATION FOR 'BACK THIS PROJECT BUTTON' */
 closePopUp.addEventListener('click', closePop)
@@ -87,6 +87,7 @@ function submitOne() {
     projectBackPopHide.style.display = "none"
     document.querySelector('.listMid1').classList.toggle('removeMidColor')
     document.querySelector('.standPop1').classList.toggle('standPopBorder')
+    form1.classList.add('formHide')
     document.querySelector('.progress1').style.backgroundColor = 'hsl(176, 50%, 47%)'
     document.querySelector('.pledgePopUpHide').style.display = 'block'
 }
@@ -95,6 +96,7 @@ function submitTwo() {
     projectBackPopHide.style.display = "none"
     document.querySelector('.listMid2').classList.toggle('removeMidColor')
     document.querySelector('.standPop2').classList.toggle('standPopBorder')
+    form2.classList.add('formHide')
     document.querySelectorAll('.progress1, .progress2, .progress3').forEach( bar => bar.style.backgroundColor = 'hsl(176, 50%, 47%)')
     document.querySelector('.pledgePopUpHide').style.display = 'block'
 }
@@ -103,6 +105,7 @@ function submitThree() {
     projectBackPopHide.style.display = "none"
     document.querySelector('.listMid3').classList.toggle('removeMidColor')
     document.querySelector('.standPop3').classList.toggle('standPopBorder')
+    form3.classList.add('formHide')
     document.querySelectorAll('.progress1, .progress2, .progress3, .progress4, .progress5, .progress6').forEach( bar => bar.style.backgroundColor = 'hsl(176, 50%, 47%)' )
     document.querySelector('.pledgePopUpHide').style.display = 'block'
 }
@@ -111,6 +114,7 @@ function submitFour() {
     projectBackPopHide.style.display = "none"
     document.querySelector('.listMid4').classList.toggle('removeMidColor')
     document.querySelector('.specialPop').classList.toggle('standPopBorder')
+    form4.classList.add('formHide')
     document.querySelectorAll('.progress1, .progress2, .progress3, .progress4, .progress5, .progress6, .progress7, .progress8, .progress9, .progress10').forEach( bar => bar.style.backgroundColor = 'hsl(176, 50%, 47%)' )
     document.querySelector('.pledgePopUpHide').style.display = 'block'
 }
