@@ -298,7 +298,7 @@ hr {
 /******************************************
 STYLES FOR POP-UP ACTIONS
 /*******************************************/
-.bookmarkPopUp {
+.pledgePopUp {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -311,7 +311,7 @@ STYLES FOR POP-UP ACTIONS
   background-color: white;
   z-index: 3;
 }
-.bookmarkPopUp button {
+.pledgePopUp button {
   background-color: hsl(176, 50%, 47%);
   border: none;
   width: 7rem;
@@ -437,7 +437,7 @@ h4:hover{
   border-radius: 50%;
   background:hsl(176, 50%, 47%);
 }
-form {
+.form {
   height: 6rem;
   display: flex;
   justify-content: space-between;
@@ -445,7 +445,7 @@ form {
   border-top: 1px solid hsl(0, 0%, 83%);
   padding: 1rem 2rem;
 }
-form div {
+.form div {
   display: flex;
   justify-content: space-between;
   flex-basis: 80%;
@@ -471,16 +471,15 @@ input {
   width: 15rem;
 }
 .form4 {
-  height: 15rem;
-  flex-direction: column;
-  align-items: flex-start;
+  height: 6rem;
+  align-items: center;
   justify-content: space-between;
 }
 input:focus {
   outline-width: 1px;
   outline-color:hsl(176, 50%, 47%)
 }
-form button {
+.form button {
   flex-basis: 20%;
   height: 3.7rem;
   border-radius: 2rem;
@@ -498,7 +497,7 @@ STYLES TO HIDE POP-UP NOTIFICATIONS
 .overlayHide {
   display: none;
 }
-.bookmarkPopUpHide {
+.pledgePopUpHide {
   display: none;
 }
 .projectBackPopHide {
@@ -534,13 +533,13 @@ STYLES FOR SCREEN-SIZE 965PX
   .overlayHide {
     height: 150rem;
   }
-  form {
+  .form {
     height: 10rem;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
   }
-  form div {
+  .form div {
     flex-basis: 50%;
     margin-bottom: 1rem;
     width: 100%;
@@ -569,7 +568,7 @@ STYLES FOR SCREEN-SIZE 965PX
     align-items: flex-start;
     justify-content: space-between;
   }
-  form button {
+  .form button {
     flex-basis: 50%;
     width: 20rem;
     padding: 0.5rem 1;
@@ -619,7 +618,7 @@ STYLES FOR SCREEN-SIZE 760PX
   .projectTopConDiv button {
     width: 12rem;
   }
-  .bookmarkPopUp {
+  .pledgePopUp {
     width: 50%;
   }
   .overlayHide {
@@ -700,7 +699,7 @@ STYLES FOR SCREEN-SIZE 560PX
   .overlayHide {
     height: 205rem;
   }
-  .bookmarkPopUp {
+  .pledgePopUp {
     width: 70%;
     left: 15%;
   }
@@ -804,10 +803,10 @@ STYLES FOR SCREEN-SIZE 340PX / START OF MOBILE STYLES
   .mastercraftLogo {
     left: 43.5%;
   }
-  form button {
+  .form button {
     width: 80%;
   }
-  .bookmarkPopUp {
+  .pledgePopUp {
     width: 85%;
     left: 10%;
   }
