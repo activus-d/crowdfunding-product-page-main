@@ -7,8 +7,8 @@ const projectBackPopUp =  document.querySelector('.projectBackPopUp')
 const bookmarkIcon = document.querySelector('.bookmarkIcon')
 const bookmarkSpan = document.querySelector('.bookmark span')
 const bookmark = document.querySelector('.bookmark')
-const bookmarkPopUp = document.querySelector('.bookmarkPopUp')
-const bookmarkButton = document.querySelector('.bookmarkPopUp button')
+const pledgePopUp = document.querySelector('.pledgePopUp')
+const pledgeButton = document.querySelector('.pledgePopUp button')
 const form1 = document.querySelector('.form1')
 const form2 = document.querySelector('.form2')
 const form3 = document.querySelector('.form3')
@@ -47,15 +47,13 @@ function bookmarked() {
     bookmarkSpan.textContent = 'Bookmarked'
     bookmarkSpan.style.color = 'hsl(176, 72%, 28%)'
     bookmark.style.width = 'auto'
-    overlayHide.style.display = "block"
-    document.querySelector('.bookmarkPopUpHide').style.display = 'block'
 }
 
 
-bookmarkButton.addEventListener('click', bookmarkClose)
-function bookmarkClose() {
+pledgeButton.addEventListener('click', pledgeClose)
+function pledgeClose() {
     overlayHide.style.display = "none"
-    document.querySelector('.bookmarkPopUpHide').style.display = "none"
+    document.querySelector('.pledgePopUpHide').style.display = "none"
 }
 
 /*SHOW FORM PART FOR EACH POP-UP*/
@@ -87,34 +85,34 @@ function showForm4() {
 submit1.addEventListener('click', submitOne)
 function submitOne() {
     projectBackPopHide.style.display = "none"
-    overlayHide.style.display = "none"
     document.querySelector('.listMid1').classList.toggle('removeMidColor')
     document.querySelector('.standPop1').classList.toggle('standPopBorder')
     document.querySelector('.progress1').style.backgroundColor = 'hsl(176, 50%, 47%)'
+    document.querySelector('.pledgePopUpHide').style.display = 'block'
 }
 submit2.addEventListener('click', submitTwo)
 function submitTwo() {
     projectBackPopHide.style.display = "none"
-    overlayHide.style.display = "none"
     document.querySelector('.listMid2').classList.toggle('removeMidColor')
     document.querySelector('.standPop2').classList.toggle('standPopBorder')
-    document.querySelectorAll('.progress1, .progress2, .progress3').forEach( bar => bar.style.backgroundColor = 'hsl(176, 50%, 47%)' )
+    document.querySelectorAll('.progress1, .progress2, .progress3').forEach( bar => bar.style.backgroundColor = 'hsl(176, 50%, 47%)')
+    document.querySelector('.pledgePopUpHide').style.display = 'block'
 }
 submit3.addEventListener('click', submitThree)
 function submitThree() {
     projectBackPopHide.style.display = "none"
-    overlayHide.style.display = "none"
     document.querySelector('.listMid3').classList.toggle('removeMidColor')
     document.querySelector('.standPop3').classList.toggle('standPopBorder')
     document.querySelectorAll('.progress1, .progress2, .progress3, .progress4, .progress5, .progress6').forEach( bar => bar.style.backgroundColor = 'hsl(176, 50%, 47%)' )
+    document.querySelector('.pledgePopUpHide').style.display = 'block'
 }
 submit4.addEventListener('click', submitFour)
 function submitFour() {
     projectBackPopHide.style.display = "none"
-    overlayHide.style.display = "none"
     document.querySelector('.listMid4').classList.toggle('removeMidColor')
-    document.querySelector('.standPop4').classList.toggle('standPopBorder')
+    document.querySelector('.specialPop').classList.toggle('standPopBorder')
     document.querySelectorAll('.progress1, .progress2, .progress3, .progress4, .progress5, .progress6, .progress7, .progress8, .progress9, .progress10').forEach( bar => bar.style.backgroundColor = 'hsl(176, 50%, 47%)' )
+    document.querySelector('.pledgePopUpHide').style.display = 'block'
 }
 
 
